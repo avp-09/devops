@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Inter', sans-serif; } </style>
+</head>
+<body class="bg-slate-900 text-white">
+
+    <nav class="flex justify-between items-center p-6 max-w-7-xl mx-auto">
+        <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+            OpsMind AI
+        </div>
+        <div class="space-x-6 text-slate-300">
+            <a href="#" class="hover:text-white">Solution</a>
+            <a href="detail.html" class="bg-blue-600 px-4 py-2 rounded-lg text-white font-medium">View Technical Detail</a>
+        </div>
+    </nav>
+
+    <header class="py-20 px-6 text-center max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+            Stop Debugging. <br>
+            <span class="text-blue-500">Start Deploying.</span>
+        </h1>
+        <p class="text-xl text-slate-400 mb-10">
+            The world's first AI-native DevOps agent that observes your CI/CD pipelines, 
+            diagnoses failures in real-time, and auto-remediates infrastructure toil.
+        </p>
+        <div class="flex justify-center gap-4">
+            <button class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-full font-bold transition">Get Started</button>
+            <button class="border border-slate-700 hover:bg-slate-800 px-8 py-4 rounded-full font-bold transition">Watch Demo</button>
+        </div>
+    </header>
+
+    <section class="py-20 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 italic text-red-400">The Problem: Engineering Burnout</h2>
+                <ul class="space-y-4 text-slate-300 text-lg">
+                    <li>❌ <strong>Toil:</strong> 40% of dev time is spent on "conveyor belt" maintenance.</li>
+                    <li>❌ <strong>Complexity:</strong> Cloud infrastructure logs are unreadable for humans.</li>
+                    <li>❌ <strong>Cost:</strong> Every minute of downtime costs thousands in lost productivity.</li>
+                </ul>
+            </div>
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 shadow-xl">
+                <h2 class="text-3xl font-bold mb-6 text-emerald-400">The Solution: OpsMind AI</h2>
+                <p class="text-slate-400 mb-4">Our agent creates a continuous <strong>"Observe → Reason → Act"</strong> loop using Amazon Bedrock.</p>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 bg-slate-800 p-3 rounded-lg border-l-4 border-blue-500">
+                        <span>🔍</span> <span><strong>Observe:</strong> Monitors CloudWatch logs 24/7.</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-slate-800 p-3 rounded-lg border-l-4 border-purple-500">
+                        <span>🧠</span> <span><strong>Reason:</strong> AI diagnoses the root cause instantly.</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-slate-800 p-3 rounded-lg border-l-4 border-emerald-500">
+                        <span>🛠️</span> <span><strong>Act:</strong> Generates and applies the fix via Lambda.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
